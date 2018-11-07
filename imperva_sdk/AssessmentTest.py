@@ -122,7 +122,7 @@ class AssessmentTest(MxObject):
     @staticmethod
     def _create_assessment_test(connection, Name=None, Description=None,
                                 Severity=None, Category=None, ScriptType=None, OsType=None, DbType=None, RecommendedFix=None,
-                                TestScript=None, AdditionalScript=None, ResultsLayout=[]):
+                                TestScript=None, AdditionalScript=None, ResultsLayout=[], update=False):
         validate_string(Name=Name)
         body = {}
         body['name'] = Name

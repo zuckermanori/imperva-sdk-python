@@ -168,7 +168,7 @@ class DBConnection(MxObject):
     def _create_db_connection(connection, SiteName=None, ServerGroupName=None, ServiceName=None, ConnectionName=None,
                               UserName=None, Password=None, Port=None, IpAddress=None, DbName=None,
                               ServerName=None, UserMapping=None, ConnectionString=None, ServiceDirectory=None,
-                              TnsAdmin=None, HomeDirectory=None, Instance=None, HostName=None):
+                              TnsAdmin=None, HomeDirectory=None, Instance=None, HostName=None, update=False):
         if SiteName is None or ServerGroupName is None or ServiceName is None or ConnectionName is None:
             raise MxException("missing DB connection path")
 

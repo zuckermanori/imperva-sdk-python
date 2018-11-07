@@ -112,7 +112,7 @@ class AssessmentPolicy(MxObject):
 
 
     @staticmethod
-    def _create_assessment_policy(connection, Name=None, Description=None, DbType=None, PolicyTags=[], AdcKeywords=[], TestNames=[]):
+    def _create_assessment_policy(connection, Name=None, Description=None, DbType=None, PolicyTags=[], AdcKeywords=[], TestNames=[], update=False):
         validate_string(Name=Name)
         body = {}
         body['name'] = Name
